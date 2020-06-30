@@ -1,0 +1,24 @@
+body
+{
+	margin: 0; 
+	padding: 0;
+	font-family: inherit; 
+}
+
+section
+{
+	height: 100vh;
+	disply: flex;
+	justify-content: center;
+	align-items: center
+}
+section:nth-child(odd)
+{
+	background: #ccc; 
+}
+section:before
+{
+	content: attr(data-text);
+	color: #262626;
+	font-size: 8em;
+}
