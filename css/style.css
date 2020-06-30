@@ -1,3 +1,7 @@
+html
+{
+	scroll-behavior: smooth; 
+}
 body
 {
 	margin: 0; 
@@ -30,4 +34,24 @@ ul
 	background: #000;
 	height: 50px; 
 	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	letter-spacing: 0; 
+	display: flex;
+	justify-content: space-around;
+}
+ul li
+{
+	list-style: none;
+}
+ul li a
+{
+	color: #fff;
+	line-height: 50px;
+	box-sizing: border-box;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+
 }
