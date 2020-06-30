@@ -10,7 +10,7 @@ section
 	height: 100vh;
 	display: flex;
 	justify-content: center;
-	align-items: center
+	align-items: center; 
 }
 section:nth-child(odd)
 {
@@ -21,4 +21,13 @@ section:before
 	content: attr(data-text);
 	color: #262626;
 	font-size: 8em;
+	text-transform: : uppercase;
+	font-weight: bold;
+}
+ul
+{
+	width: 100%;
+	background: #000;
+	height: 50px; 
+	margin: 0;
 }
