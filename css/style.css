@@ -9,11 +9,19 @@ body
 	font-family: sans-serif; 
 }
 
+p{
+	text-align: center;
+	color: black;
+	font-size: 2em; 
+	
+}
 section
 {
-	height: 110vh;
+
+	padding-top:50px;
+	height: 99.3vh;
 	display: flex;
-	margin-top: 50px;
+	margin-top: 0;
 	
 }
 section:nth-child(odd)
@@ -30,6 +38,7 @@ section:before
 	justify-content: space-around;
 	align-items: flex-start;
 }
+
 ul
 { 
 
@@ -38,7 +47,7 @@ ul
 	height:50px; 
 	margin: 0;
 	padding: 0;
-	position: fixed;
+	position: sticky;
 	top: 0px;
 	letter-spacing: 0; 
 	display: flex;
@@ -51,17 +60,12 @@ ul li
 }
 ul li a
 {
+	margin-top: 0; 
 	color: #14A098;
 	line-height: 50px;
 	box-sizing: border-box;
-
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
+	
 }
-p
-{
-	font-weight: bold;
-	font-size: 1em;  
-}
-
