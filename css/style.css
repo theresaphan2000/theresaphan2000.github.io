@@ -10,10 +10,9 @@ body
 }
 
 p{
-	text-align: center;
+	text-align: left;
 	color: black;
-	font-size: 2em; 
-	
+	font-size: 3em; 
 }
 section
 {
