@@ -1,0 +1,10 @@
+.h1, h1 {
+  font-size: 2.5rem;
+  overflow: hidden;
+  border-right: initial;
+  white-space: normal;
+  margin: initial;
+  letter-spacing: initial;
+  animation: typing 3.5 steps(40, end);
+}
+
