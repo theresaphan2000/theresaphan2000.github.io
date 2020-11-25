@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 6942;background-color: rgb(33,37,41);">
 
 <head>
     <meta charset="utf-8">
@@ -27,7 +27,103 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body>
+<body style="background-color: rgb(33,37,41);/*height: 650;*/filter: blur(0px);">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean" style="background-color: #1e222d;height: 75px;padding: 12;padding-top: 12;">
+        <div class="container"><a class="navbar-brand text-white border rounded border-warning" href="index.html" style="background-color: #2a2e39;padding-left: 4px;padding-right: 4px;">THERESA PHAN</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"
+                style="background-color: #a3a16d;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="background-color: #363a45;">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active text-warning" href="index.html" style="color: rgb(235,255,0);">Who is she?</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-white" href="#">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-white" href="#">Contact me</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-white" data-toggle="dropdown" aria-expanded="false" href="#"></a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="article-clean" style="background-color: #131722;">
+        <div class="container">
+            <div class="row" style="background-color: #131722;color: #1e222d;">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center" style="color: #e94560;font-family: Abel, sans-serif;">Bee's Key's&nbsp;</h1>
+                        <p class="text-center border rounded border-info" style="color: #1e222d;background-color: #1e222d;"><span class="by">Github Source</span> <a href="#" style="color: rgb(255,184,0);"><br>https://github.com/theresaphan2000/airbrakes<br><br></a></p><img class="img-fluid" src="assets/img/adspfk]j.png"></div>
+                    <div class="text" style="color: rgb(214,214,214);font-family: Abel, sans-serif;">
+                        <p style="font-family: 'Alegreya Sans', sans-serif;color: rgb(162,162,162);">Bee's Key's is a service learning project I did for my final year at Clark. It was really one of the first "official" projects I started, and though it is not perfect I still learned a lot from it. For this, I designed a basic
+                            mechanical keyboard from bare bone AVR chips, along with designing a Python application that made remapping the keymaps easier.&nbsp;</p>
+                        <p style="font-family: 'Alegreya Sans', sans-serif;color: rgb(162,162,162);background-color: #131722;">A basic keyboard that is typically sold to the common audience is extremely limiting in its customization. Usually, the product is sold with a preset keymapping layout that either is completely unchangeable or can be altered to
+                            one’s preference but requires intermediate levels of programming in C, AVRDUDE firmware flashing, and at least a general understanding of MCUS and data charts. Because of this, most keyboard users have no access to customizations
+                            that<br>cater to their preferences and/or ways to efficiently boost their productivity.With that, the intentions in developing this project was to simplify the process of reprogramming and flashing firmware onto a keyboard.
+                            To do so, I decided to build a small 3x3 dynamic macro-pad with fully customizable keys that can both be static, or dynamically macro. Alongside that, I developed a basic GUI Python application that significantly simplified
+                            the process of making the<br>hex file and flashing the file onto the MCU itself. Consequently, the user then does not need to know C or Bash Script, how to navigate the terminal, or have to read through countless articles and
+                            accidently brick their MCU.&nbsp;<br></p>
+                        <h2 style="color: #a7975c;">Designing the Keyboard</h2>
+                        <p style="font-family: 'Alegreya Sans', sans-serif;color: rgb(162,162,162);background-color: #131722;">Throughout the term, I had many goals and milestones I wanted to reach for this project, such as:<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;• Successfully wiping the Arduino bootloader from the ATMEGA328p chip.&nbsp;<br>&nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;• Rewriting the firmware to fit for specifications for customized keyboard<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;• Flashing firmware onto the ATMEGA328P chip.&nbsp;<br>&nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;• Prototyping a hardwired keyboard.&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;• Prototyping a GUI Python application that can allow users to change macros, make and<br>&nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;compile the file, along with flashing.&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;• Custom PCB for the keyboard <br>Though some of these goasl were not compelete,
+                            I will go into more detail about the parts I was able to compelete.&nbsp;<br></p>
+                        <p style="font-family: 'Alegreya Sans', sans-serif;color: rgb(162,162,162);background-color: #131722;">When first designing the keyboard, I wanted to use a commonly used MCU which was the ATEMGA328P. This was because it was commonly used in Arduino Uno chips.&nbsp;</p>
+                        <h2 style="color: #a7975c;">Step Process</h2>
+                        <p style="font-family: 'Alegreya Sans', sans-serif;color: rgb(162,162,162);">Here is my process of research and designing the keyboard.&nbsp;</p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="border-info" style="color: rgb(255,255,255);font-family: 'Alegreya Sans', sans-serif;">Steps</th>
+                                        <th style="color: rgb(255,255,255);">Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr></tr>
+                                    <tr>
+                                        <td style="color: rgb(162,162,162);background-color: #1e222d;">1. Wiping the Arduino Bootloader &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            &nbsp; &nbsp;</td>
+                                        <td style="color: rgb(162,162,162);background-color: #363a45;">I didn't want to use Arduino because I wanted a better understanding of embedded systems as a whole, and because using an Arduino device meant that it would only emulate an HID rather than being one itself. This
+                                            was rather difficult because it was the first time I've worked with a baremetal chip other than PIC processors. What I needed to do was use AVRdude to flash the USBaspLoader that allowed the MCU to be an HID.
+                                            The first few times, I had difficulty making this work because I wasn't doing it in command line, and was doing this in the Ubuntu terminal instead which caused targetting errors. To wipe and reupload a new
+                                            bootloader, I had to use the USBtiny pocket programmer to achieve this.&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-info" style="color: rgb(162,162,162);background-color: #1e222d;">2. Making a standalone working chip</td>
+                                        <td style="color: rgb(162,162,162);background-color: #363a45;">For this, I basically needed to remove the chip form the Arduino and make a standalone to reduce space on the keyboard. This was a simple process, as all I needed were a few capacitors and a 16MHz crystal oscillator.
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-info" style="color: rgb(162,162,162);background-color: #1e222d;">3. Writing and flashing the firmware onto the chip</td>
+                                        <td style="color: rgb(162,162,162);background-color: #363a45;">For the firmware, I used the QMK Firmare open source files as this was a commonly used on many keyboards. I had to configure my firmware to the atmega328p and rewrite the keymapping for the board. Getting the firmware
+                                            onto the board was a lot simplier than the bootloader, as I had more experience with flashing MCU's at this point.&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: rgb(162,162,162);background-color: #1e222d;">4. Switching the chips</td>
+                                        <td style="color: rgb(162,162,162);background-color: #363a45;">Though I intended to only make a macro pad, I wanted to use a chip with pins in case I wanted to change the size of the keyboard or add more features such as LED lighting. I switched to the ATMEGA32A later on. The
+                                            flashing and wiring was pretty similar because it was still an ATMEL chip.&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: #1e222d;color: rgb(162,162,162);">5. Making the application</td>
+                                        <td style="background-color: #363a45;color: rgb(162,162,162);">To make the application I used Python and its Tkinter libraries. This was a fairly straightforward process for programming the GUI application.&nbsp;</td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="simple-slider">
+        <div class="swiper-container">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
